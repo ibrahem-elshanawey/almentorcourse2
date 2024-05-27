@@ -33,7 +33,11 @@ section.main div.left div.main_logo {
     align-items: center;
 }
 
-section.main div.left div.main_logo img {
+section.main div.left div.main_logo a {
+    width: 100%;
+}
+
+section.main div.left div.main_logo a img {
     width: 10%;
 }
 
@@ -272,6 +276,8 @@ section.feature_courses div.feature_cart_container div.cart_feature {
     width: 100%;
     max-width: 400px;
     min-width: 300px;
+    border: 1px solid #c3c3c3;
+    border-radius: 20px;
 }
 
 section.feature_courses div.feature_cart_container div.cart_feature div.cart_image_container {
@@ -290,6 +296,10 @@ section.feature_courses div.feature_cart_container div.cart_feature div.cart_ima
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+section.feature_courses div.feature_cart_container div.cart_feature div.body-cart {
+    padding-inline: 10px;
 }
 
 section.feature_courses div.feature_cart_container div.cart_feature div.cart_image_container button {
@@ -593,6 +603,16 @@ section.selling div.content-selling>button {
     border: none;
     background-color: #000;
     color: #fff;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+section.selling div.content-selling>button:hover {
+    background-color: var(--main_color);
 }
 
 section.selling div.selling-content {
@@ -634,7 +654,7 @@ section.selling div.left-content div.content_cart_left {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .image-cart img {
@@ -656,7 +676,7 @@ section.selling div.left-content div.content_cart_left {
 section.selling div.left-content div.content_cart_left h3 {
     font-size: 20px;
     width: 80%;
-    margin-block: 8px;
+    margin-block: 15px;
     color: var(--main_color);
 }
 

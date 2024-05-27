@@ -1,0 +1,71 @@
+@media only screen and (max-width:600px) {
+    section.main {
+        margin-block: 40px;
+        flex-direction: column;
+    }
+
+    section.main div.right {
+        order: -1;
+    }
+
+    section.main div.left h1 {
+        font-size: 30px;
+        width: 80%;
+    }
+
+    section.main div.left p {
+        width: 95%;
+    }
+
+    section.material {
+        flex-direction: column;
+    }
+
+    section.material div.furniture-text h3 {
+        font-size: 30px;
+    }
+
+    section.end {
+        flex-direction: column;
+
+    }
+
+    section.end div.right h2 {
+        font-size: 30px;
+    }
+
+    section.end div.right {
+        padding-block: 20px;
+    }
+
+    section.end div.left {
+        position: relative;
+        bottom: -4px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer .content {
+        display: flex;
+        font-size: 14px;
+        flex-wrap: wrap;
+        gap: 17px;
+        justify-content: flex-start;
+    }
+
+    .footer {
+        position: unset;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .footer .content,
+    .footer {
+        font-size: 14px;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    
+}
