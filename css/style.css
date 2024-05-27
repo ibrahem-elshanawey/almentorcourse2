@@ -837,6 +837,21 @@ footer div.end ul li:hover {
     -o-transition: all 0.3s linear;
 }
 
+footer div.start div.icons-footer svg {
+    font-size: 25px;
+    padding-right: 15px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+footer div.start div.icons-footer svg:hover {
+    cursor: pointer;
+    color: var(--main_color);
+}
+
 /* responsive  */
 @media (max-width: 1100px) {
     section.feature_courses div.feature_cart_container {
@@ -888,10 +903,7 @@ footer div.end ul li:hover {
         gap: 20px;
     }
 
-    section.best_courses div.right {
-        min-width: 250px;
-        order: -1;
-    }
+
 
     section.best_courses div.left div.call_us {
         width: 100%;
@@ -928,5 +940,10 @@ footer div.end ul li:hover {
     footer {
         flex-wrap: wrap;
         margin-bottom: 20px;
+    }
+
+    section.best_courses div.right {
+        min-width: 250px;
+        order: -1;
     }
 }
